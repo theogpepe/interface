@@ -43,7 +43,6 @@ export function useENSRegistrarContract(withSignerIfPossible?: boolean): Contrac
   if (chainId) {
     switch (chainId) {
       case ChainId.MAINNET:
-      case ChainId.BSCTESTNET:
     }
   }
   return useContract(address, ENS_ABI, withSignerIfPossible)

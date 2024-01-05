@@ -2479,7 +2479,7 @@
 
 "@theogpepe/v2-sdk@https://github.com/theogpepe/v2-sdk":
   version "1.0.0"
-  resolved "https://github.com/theogpepe/v2-sdk#91c4a3ce71a6df1fa7bf22b659da6740cdde8bc9"
+  resolved "https://github.com/theogpepe/v2-sdk#d195c028203338afdd9d57e9dc87b2c5ec5fbce2"
   dependencies:
     "@theogpepe/v2-core" "https://github.com/theogpepe/v2-core.git"
     big.js "^5.2.2"

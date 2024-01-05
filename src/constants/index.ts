@@ -15,8 +15,7 @@ export const DAI = new Token(ChainId.MAINNET, '0x6B175474E89094C44Da98b954EedeAC
 
 
 const WETH_ONLY: ChainTokenList = {
-  [ChainId.MAINNET]: [WETH[ChainId.MAINNET]],
-  [ChainId.BSCTESTNET]: [WETH[ChainId.BSCTESTNET]],
+  [ChainId.MAINNET]: [WETH[ChainId.MAINNET]]
 }
 
 // used to construct intermediary pairs for trading
