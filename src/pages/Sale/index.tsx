@@ -21,7 +21,7 @@ import AppBody from '../AppBody';
 const Sale: React.FC = () => {
   const { account, library } = useWeb3React<ethers.providers.Web3Provider>();
   const [ethAmount, setEthAmount] = useState<string>('');
-  const [cardioAmount, setCardioAmount] = useState<string>('');
+  const [pepeAmount, setPepeAmount] = useState<string>('');
 
 
 
@@ -32,22 +32,22 @@ const Sale: React.FC = () => {
 
   const remainingForSale = Number(forSale) - Number(totalSold);
 
-  const plsBalance = useCurrencyBalance(account ?? undefined, ETHER);
-  const maxAmountInput: CurrencyAmount | undefined = maxAmountSpend(plsBalance);
+  const ethBalance = useCurrencyBalance(account ?? undefined, ETHER);
+  const maxAmountInput: CurrencyAmount | undefined = maxAmountSpend(ethBalance);
   const atMaxAmountInput = Boolean(maxAmountInput && ethAmount === maxAmountInput.toExact());
 
-  const isPlsBalanceZero = plsBalance?.toExact() === '0';
-  const isCardioAmountExceeding = Number(cardioAmount) > Number(remainingForSale);
+  const isPlsBalanceZero = ethBalance?.toExact() === '0';
+  const isPepeAmountExceeding = Number(pepeAmount) > Number(remainingForSale);
 
 
   const handleEthAmountChange = useCallback((value: string) => {
     setEthAmount(value);
-    const cardioValue = (Number(value) / Number(price)).toString(); // Multiply the input value by 100
-    setCardioAmount(cardioValue);
+    const pepeValue = (Number(value) / Number(price)).toString(); // Multiply the input value by 100
+    setPepeAmount(pepeValue);
   }, [price]);
 
-  const handleCardioAmountChange = useCallback((value: string) => {
-    setCardioAmount(value);
+  const handlePepeAmountChange = useCallback((value: string) => {
+    setPepeAmount(value);
     const ethValue = (Number(value) * Number(price)).toString(); // Divide the input value by 100
     setEthAmount(ethValue);
   }, [price]);
@@ -57,12 +57,12 @@ const Sale: React.FC = () => {
     if (!library || !account) return;
 
     const balance = await library.getBalance(account);
-    const ethBalance = ethers.utils.formatEther(balance);
-    setEthAmount(ethBalance);
+    const r = ethers.utils.formatEther(balance);
+    setEthAmount(r);
 
-    // Calculate cardioAmount based on the max ETH amount
-    const cardioValue = (Number(ethBalance) / Number(price)).toString();
-    setCardioAmount(cardioValue);
+    // Calculate pepeAmount based on the max ETH amount
+    const pepeValue = (Number(r) / Number(price)).toString();
+    setPepeAmount(pepeValue);
   }, [library, account, price]);
 
 
@@ -84,9 +84,9 @@ const Sale: React.FC = () => {
           <StyledPageHeader>
             <Flex alignItems="center">
               <Details>
-                <Heading mb="8px">BUY CARDIO</Heading>
+                <Heading mb="8px">BUY PEPE</Heading>
                 <Text color="textSubtle" fontSize="14px">
-                  CardioSwap (CARDIO) Token Sale
+                  PepeSwap (PEPE) Token Sale
                 </Text>
               </Details>
             </Flex>
@@ -95,27 +95,27 @@ const Sale: React.FC = () => {
             <HoverCard>
             <AutoColumn gap="md">
               <RowBetween>
-                PLS Cap:
+                ETH Cap:
                 <RowFixed>
-                  {cap ? parseInt(ethers.utils.formatUnits(cap, 18)) : 'Loading...'} PLS
+                  {cap ? parseInt(ethers.utils.formatUnits(cap, 18)) : 'Loading...'} ETH
                 </RowFixed>
               </RowBetween>
               <RowBetween>
                 For Sale:
                 <RowFixed>
-                  {forSale ? parseInt(ethers.utils.formatUnits(forSale, 18)) : 'Loading...'} CARDIO
+                  {forSale ? parseInt(ethers.utils.formatUnits(forSale, 18)) : 'Loading...'} PEPE
                 </RowFixed>
               </RowBetween>
               <RowBetween>
                 Total Sold:
                 <RowFixed>
-                {(Number(totalSold)/Number(forSale)*100).toFixed(2)}% = {totalSold ? parseInt(ethers.utils.formatUnits(totalSold, 18)) : 'Loading...'} CARDIO
+                {(Number(totalSold)/Number(forSale)*100).toFixed(2)}% = {totalSold ? parseInt(ethers.utils.formatUnits(totalSold, 18)) : 'Loading...'} PEPE
                 </RowFixed>
               </RowBetween>
               <RowBetween>
                 Price:
                 <RowFixed>
-                  {price ? price.toString() : 'Loading...'} CARDIO/PLS
+                  {price ? price.toString() : 'Loading...'} PEPE/ETH
                 </RowFixed>
               </RowBetween>
               <RowBetween>
@@ -138,7 +138,7 @@ const Sale: React.FC = () => {
           <CardBody>
             <AutoColumn gap="md">
               <SaleInputPanel
-                label="From (PLS)"
+                label="From (ETH)"
                 value={ethAmount}
                 onUserInput={handleEthAmountChange}
                 onMax={calculateMaxAmount}
@@ -147,12 +147,12 @@ const Sale: React.FC = () => {
                 id="eth-input"
               />
               <SaleInputPanel
-                label="To (Cardio)"
-                value={cardioAmount}
-                onUserInput={handleCardioAmountChange}
+                label="To (Pepe)"
+                value={pepeAmount}
+                onUserInput={handlePepeAmountChange}
                 showMaxButton={false}
                 currency={USDT}
-                id="cardio-output"
+                id="pepe-output"
               />
             </AutoColumn>
             <BottomGrouping>
@@ -171,13 +171,13 @@ const Sale: React.FC = () => {
                   variant="primary"
                   width="100%"
                 >
-                  Not enough PLS balance
+                  Not enough ETH balance
                 </Button>
-              ) : isCardioAmountExceeding ? (
+              ) : isPepeAmountExceeding ? (
                 <Button disabled
                   variant="primary"
                   width="100%">
-                  Not enough CARDIO available
+                  Not enough PEPE available
                 </Button>
               ) : (
                 <Button
