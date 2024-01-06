@@ -19,7 +19,7 @@ export function isAddress(value: any): string | false {
 
 
 export function getBscScanLink(chainId: ChainId, data: string, type: 'transaction' | 'token' | 'address'): string {
-  const prefix = `https://celoscan.io`
+  const prefix = `https://etherscan.io`
 
   switch (type) {
     case 'transaction': {
