@@ -1,6 +1,6 @@
 import React from 'react'
 import { Trade, TradeType } from '@theogpepe/v2-sdk'
-import { Card, CardBody, Text } from '@cardioswap/uikit'
+import { Card, CardBody, Text } from '@theogpepe/uikit'
 import useI18n from 'hooks/useI18n'
 import { Field } from '../../state/swap/actions'
 import { useUserSlippageTolerance } from '../../state/user/hooks'

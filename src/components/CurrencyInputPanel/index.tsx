@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from 'react'
 import { Currency, Pair } from '@theogpepe/v2-sdk'
-import { Button, ChevronDownIcon, Text } from '@cardioswap/uikit'
+import { Button, ChevronDownIcon, Text } from '@theogpepe/uikit'
 import styled from 'styled-components'
 import { darken } from 'polished'
 import useI18n from 'hooks/useI18n'

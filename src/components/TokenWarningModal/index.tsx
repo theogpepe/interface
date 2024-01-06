@@ -1,6 +1,6 @@
 import { Token } from '@theogpepe/v2-sdk'
 import { transparentize } from 'polished'
-import { Button, Text } from '@cardioswap/uikit'
+import { Button, Text } from '@theogpepe/uikit'
 import React, { useCallback, useMemo, useState } from 'react'
 import styled from 'styled-components'
 import { AlertTriangle } from 'react-feather'

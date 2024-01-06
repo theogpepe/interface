@@ -1,6 +1,6 @@
 import { Trade, TradeType } from '@theogpepe/v2-sdk'
 import React, { useMemo, useState } from 'react'
-import { Text, Button } from '@cardioswap/uikit'
+import { Text, Button } from '@theogpepe/uikit'
 import { Repeat } from 'react-feather'
 
 import useI18n from 'hooks/useI18n'

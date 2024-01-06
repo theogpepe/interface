@@ -8,7 +8,7 @@ import {
   UserRejectedRequestError as UserRejectedRequestErrorWalletConnect,
   WalletConnectConnector,
 } from '@web3-react/walletconnect-connector'
-import { connectorLocalStorageKey, ConnectorNames } from '@cardioswap/uikit'
+import { connectorLocalStorageKey, ConnectorNames } from '@theogpepe/uikit'
 import useToast from 'hooks/useToast'
 import { connectorsByName } from 'connectors'
 import SwitchNetwork from './useSwitchToPulse'

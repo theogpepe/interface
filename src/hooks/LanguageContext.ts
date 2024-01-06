@@ -1,5 +1,5 @@
 import React, { createContext } from 'react'
-import { LangType } from '@cardioswap/uikit'
+import { LangType } from '@theogpepe/uikit'
 
 export interface LanguageObject {
   code: string

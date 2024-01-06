@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text } from '@cardioswap/uikit'
+import { Text } from '@theogpepe/uikit'
 import { ChainId, Currency, currencyEquals, ETHER, Token } from '@theogpepe/v2-sdk'
 import styled from 'styled-components'
 

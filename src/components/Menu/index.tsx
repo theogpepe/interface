@@ -1,21 +1,21 @@
 import React, { useContext } from 'react'
-import { Menu as UikitMenu } from '@cardioswap/uikit'
+import { Menu as UikitMenu } from '@theogpepe/uikit'
 import { useWeb3React } from '@web3-react/core'
 import { allLanguages } from 'constants/localisation/languageCodes'
 import { LanguageContext } from 'hooks/LanguageContext'
 import useTheme from 'hooks/useTheme'
 import useGetLocalProfile from 'hooks/useGetLocalProfile'
 import useAuth from 'hooks/useAuth'
-import useGetCardioPrice from 'utils/useGetCardioPrice'
+import useGetPepePrice from 'utils/useGetPepePrice'
 import links from './config'
 
 const Menu: React.FC = (props) => {
-  const { account } = useWeb3React()
-  const { login, logout } = useAuth()
-  const { selectedLanguage, setSelectedLanguage } = useContext(LanguageContext)
-  const { isDark, toggleTheme } = useTheme()
-  const cardioPrice = useGetCardioPrice()
-  const profile = useGetLocalProfile()
+  const { account } = useWeb3React();
+  const { login, logout } = useAuth();
+  const { selectedLanguage, setSelectedLanguage } = useContext(LanguageContext);
+  const { isDark, toggleTheme } = useTheme();
+  const profile = useGetLocalProfile();
+  const pepePriceUsd = useGetPepePrice(); // This now directly returns the price
 
   return (
     <UikitMenu
@@ -28,11 +28,11 @@ const Menu: React.FC = (props) => {
       currentLang={selectedLanguage?.code || ''}
       langs={allLanguages}
       setLang={setSelectedLanguage}
-      cardioPriceUsd={cardioPrice}
+      pepePriceUsd={pepePriceUsd} // If pepePriceUsd is null or undefined, default to 0
       profile={profile}
       {...props}
     />
-  )
+  );
 }
 
-export default Menu
+export default Menu;

@@ -1,6 +1,6 @@
 import React from 'react'
 import { Price } from '@theogpepe/v2-sdk'
-import { SyncAltIcon, Text } from '@cardioswap/uikit'
+import { SyncAltIcon, Text } from '@theogpepe/uikit'
 import { StyledBalanceMaxMini } from './styleds'
 
 interface TradePriceProps {

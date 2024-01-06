@@ -1,6 +1,6 @@
 import React from 'react'
 import { Currency, Percent, Price } from '@theogpepe/v2-sdk'
-import { Text } from '@cardioswap/uikit'
+import { Text } from '@theogpepe/uikit'
 import { AutoColumn } from '../../components/Column'
 import { AutoRow } from '../../components/Row'
 import { ONE_BIPS } from '../../constants'

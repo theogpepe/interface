@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { Button, CardBody, Heading, Text, Flex } from '@cardioswap/uikit';
+import { Button, CardBody, Heading, Text, Flex } from '@theogpepe/uikit';
 import { useWeb3React } from '@web3-react/core';
 import { ethers } from 'ethers';
 import styled from 'styled-components'

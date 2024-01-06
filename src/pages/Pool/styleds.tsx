@@ -1,4 +1,4 @@
-import { Text } from '@cardioswap/uikit'
+import { Text } from '@theogpepe/uikit'
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`

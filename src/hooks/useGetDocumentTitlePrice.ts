@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
-import useGetCardioPrice from 'utils/useGetCardioPrice'
+import useGetPepePrice from 'utils/useGetPepePrice'
 
 const useGetDocumentTitlePrice = () => {
-  const cakePriceBusd = useGetCardioPrice()
+  const cakePriceBusd = useGetPepePrice()
 
   const cakePriceBusdString =
     Number.isNaN(cakePriceBusd) || cakePriceBusd === 0 || !cakePriceBusd
@@ -13,7 +13,7 @@ const useGetDocumentTitlePrice = () => {
         })}`
 
   useEffect(() => {
-    document.title = `CardioSwap${cakePriceBusdString}`
+    document.title = `PEPE${cakePriceBusdString}`
   }, [cakePriceBusdString])
 }
 export default useGetDocumentTitlePrice

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Flex, Text, useMatchBreakpoints, PancakeToggle } from '@cardioswap/uikit'
+import { Box, Flex, Text, useMatchBreakpoints, PancakeToggle } from '@theogpepe/uikit'
 import { useAudioModeManager } from 'state/user/hooks'
 
 

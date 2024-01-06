@@ -1,7 +1,7 @@
 import React from 'react'
 import { useActiveWeb3React } from 'hooks'
 import { Currency, Pair } from '@theogpepe/v2-sdk'
-import { Button, Text } from '@cardioswap/uikit'
+import { Button, Text } from '@theogpepe/uikit'
 import styled from 'styled-components'
 import { darken } from 'polished'
 import { useCurrencyBalance } from '../../state/wallet/hooks'

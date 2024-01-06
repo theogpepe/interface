@@ -1,7 +1,7 @@
 import { CurrencyAmount, JSBI, Token, Trade } from '@theogpepe/v2-sdk'
 import React, { useCallback, useContext, useEffect, useMemo, useState } from 'react'
 import { ArrowDown } from 'react-feather'
-import { CardBody, ArrowDownIcon, Button, IconButton, Text } from '@cardioswap/uikit'
+import { CardBody, ArrowDownIcon, Button, IconButton, Text } from '@theogpepe/uikit'
 import { ThemeContext } from 'styled-components'
 import AddressInputPanel from 'components/AddressInputPanel'
 import Card, { GreyCard } from 'components/Card'

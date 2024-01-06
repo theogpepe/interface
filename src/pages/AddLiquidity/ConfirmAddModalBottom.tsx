@@ -1,6 +1,6 @@
 import { Currency, CurrencyAmount, Fraction, Percent } from '@theogpepe/v2-sdk'
 import React from 'react'
-import { Button, Text } from '@cardioswap/uikit'
+import { Button, Text } from '@theogpepe/uikit'
 import { TranslateString } from 'utils/translateTextHelpers'
 import { RowBetween, RowFixed } from '../../components/Row'
 import CurrencyLogo from '../../components/CurrencyLogo'

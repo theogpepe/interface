@@ -2473,6 +2473,18 @@
     lz-string "^1.4.4"
     pretty-format "^26.6.2"
 
+"@theogpepe/uikit@https://github.com/theogpepe/uidist":
+  version "0.28.0"
+  resolved "https://github.com/theogpepe/uidist#35b15e591773dc05d11c123241c6a2a16c8e18ed"
+  dependencies:
+    "@popperjs/core" "^2.9.2"
+    "@types/lodash" "^4.14.168"
+    "@types/styled-system" "^5.1.10"
+    lodash "^4.17.20"
+    react-popper "^2.2.5"
+    react-transition-group "^4.4.1"
+    styled-system "^5.1.5"
+
 "@theogpepe/v2-core@https://github.com/theogpepe/v2-core.git":
   version "1.0.1"
   resolved "https://github.com/theogpepe/v2-core.git#a1cf44ee93c6915623b29cb851b50c5a8b9939f3"

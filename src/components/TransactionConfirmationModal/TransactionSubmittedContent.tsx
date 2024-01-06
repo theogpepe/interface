@@ -1,7 +1,7 @@
 import { ChainId } from '@theogpepe/v2-sdk'
 import React, { useContext } from 'react'
 import { ThemeContext } from 'styled-components'
-import { Button, LinkExternal } from '@cardioswap/uikit'
+import { Button, LinkExternal } from '@theogpepe/uikit'
 import { ArrowUpCircle } from 'react-feather'
 import { AutoColumn } from '../Column'
 import { getBscScanLink } from '../../utils'
