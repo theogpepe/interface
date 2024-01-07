@@ -53,7 +53,7 @@ const UseAtRiskModal = ({ onDismiss = defaultOnDismiss }: UseAtRiskModalProps) =
               scale="sm"
             />
             <Text ml="16px" color={isAcknowledged ? 'text' : 'textDisabled'}>
-              I understand that CardioSwap frontend is in the initial stages of development and that no audit has been conducted, I trade under my own risk.
+              I understand that theogpepe frontend is in the initial stages of development and that no audit has been conducted, I trade under my own risk.
             </Text>
           </Flex>
         </StyledLabel>

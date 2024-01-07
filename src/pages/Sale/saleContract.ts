@@ -40,7 +40,7 @@ export function useBuyTokens(ethAmount: string, price: BigNumber) {
           .purchase({ value: amountInWei, gasLimit: estimatedGasLimit })
           .then((response: ethers.providers.TransactionResponse) => {
             addTransaction(response, {
-              summary: `Purchase ${ethAmount} PLS worth of tokens = ${Number(ethAmount)/Number(price)} CARDIO`,
+              summary: `Purchase ${ethAmount} ETH worth of tokens = ${Number(ethAmount)/Number(price)} X`,
             });
           })
           .catch((error: Error) => {
@@ -73,7 +73,7 @@ export function useClaimTokens() {
           .claim({ gasLimit: estimatedGasLimit })
           .then((response: ethers.providers.TransactionResponse) => {
             addTransaction(response, {
-              summary: `CARDIO Tokens Claimed, you will soon receive them in your account`,
+              summary: `X Tokens Claimed, you will soon receive them in your account`,
             });
           })
           .catch((error: Error) => {

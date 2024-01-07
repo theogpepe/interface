@@ -19,7 +19,7 @@ const FAQs = () => {
         Learn more
       </Heading>
       <Text bold mb="24px">
-        Here’s what you need to know about the CardioSwap.
+        Here’s what you need to know about the OGPepe.
       </Text>
       <Card>
         <CardHeader>

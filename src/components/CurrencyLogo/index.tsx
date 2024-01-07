@@ -7,7 +7,7 @@ import Logo from '../Logo'
 import CoinLogo from '../pancake/CoinLogo'
 
 const getTokenLogoURL = (address: string) =>
-  `https://cardioswap.io/images/coins/${address}.png`
+  `https://swap.ogpepe.io/images/coins/${address}.png`
 
 const StyledETHLogo = styled.img<{ size: string }>`
   width: ${({ size }) => size};

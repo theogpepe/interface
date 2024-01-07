@@ -49,11 +49,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Github',
-        href: 'https://github.com/cardioswap',
+        href: 'https://github.com/theogpepe',
       },
       {
         label: 'Docs',
-        href: 'https://github.com/cardioswap',
+        href: 'https://github.com/theogpepe',
       },
     ],
   },
