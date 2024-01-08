@@ -12,6 +12,9 @@ export const _WETH = new Token(ChainId.MAINNET, '0xC02aaA39b223FE8D0A0e5C4F27eAD
 export const USDT = new Token(ChainId.MAINNET, '0xdAC17F958D2ee523a2206206994597C13D831ec7', 18, 'USDT', 'Tether USD')
 export const USDC = new Token(ChainId.MAINNET, '0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48', 18, 'USDC', 'USDC')
 export const DAI = new Token(ChainId.MAINNET, '0x6B175474E89094C44Da98b954EedeAC495271d0F', 18, 'DAI', 'Dai Stablecoin')
+export const PEPE = new Token(ChainId.MAINNET, '0x4dFae3690b93c47470b03036A17B23C1Be05127C', 18, 'PEPE', 'Pepe')
+export const WOJAK = new Token(ChainId.MAINNET, '0x4fd2ec9bdd398f8e522d76ea3704f8dbdc1f23f4', 18, 'WOJAK', 'Wojak.farm')
+export const WBTC = new Token(ChainId.MAINNET, '0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599', 18, 'WBTC', 'Wrapped BTC')
 
 
 const WETH_ONLY: ChainTokenList = {
@@ -21,7 +24,7 @@ const WETH_ONLY: ChainTokenList = {
 // used to construct intermediary pairs for trading
 export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   ...WETH_ONLY,
-  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], USDT, USDC],
+  [ChainId.MAINNET]: [...WETH_ONLY[ChainId.MAINNET], USDT, USDC, WBTC, PEPE, WOJAK],
 }
 
 /**
