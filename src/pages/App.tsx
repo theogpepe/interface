@@ -139,6 +139,7 @@ export default function App() {
                       <Route exact path="/add" component={AddLiquidity} />
                       <Route exact path="/faq" component={FAQ} />
                       <Route exact path="/sale" component={Sale} />
+                      <Route exact path="/charts" component={Sale} />
 
                       <Route exact strict path="/remove/:currencyIdA/:currencyIdB" component={RemoveLiquidity} />
 
