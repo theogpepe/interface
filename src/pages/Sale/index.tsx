@@ -1,53 +1,87 @@
+
+
 import React, { useState, useCallback } from 'react';
-import { CardBody, Input } from '@theogpepe/uikit';
-import CardNav from 'components/CardNav';
+import { Input, Button, CardBody } from '@theogpepe/uikit'; // Ensure these components are correctly imported
 import Container from 'components/Container';
-import AppBody from '../AppBody';
-
-const Charts: React.FC = () => {
+import AppBody from 'pages/AppBody';
 
 
-  // ... existing state variables ...
+const poolPairs = {
+  "ETH/PEPE": "0x5Cd98FdCF62dC69B7d8307837C73a50759772538",  // Example address
+  "ETH/WOJAK": "0x115f10B50314677f8e50189Ff588533873e867E7", // More pairs
+  // Add more pairs as needed
+};
 
-  const [poolAddress, setPoolAddress] = useState<string>('');
+const PoolChartComponent = () => {
+  const [poolAddress, setPoolAddress] = useState('');
+  const [showList, setShowList] = useState(false);
 
-  // ... existing hooks and functions ...
-
-  const handlePoolAddressChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
+  const handlePoolAddressChange = useCallback((event) => {
     setPoolAddress(event.target.value);
   }, []);
 
-  const getChartUrl = useCallback(() => {
-    return `https://www.dextools.io/widget-chart/es/ether/pe-light/${poolAddress}?theme=dark&chartType=1&chartResolution=30&drawingToolbars=false`;
-  }, [poolAddress]);
+  const toggleList = () => {
+    setShowList(!showList);
+  };
 
-  // ... existing JSX ...
+  const selectPool = (address) => {
+    setPoolAddress(address);
+    setShowList(false); // Optionally close the list after selection
+  };
+
+  const getChartUrl = () => {
+    return `https://www.dextools.io/widget-chart/es/ether/pe-light/${poolAddress}?theme=dark&chartType=1&chartResolution=30&drawingToolbars=false`;
+  };
+
+  const handleKeyDown = (event, address) => {
+    if (event.key === 'Enter') {
+      selectPool(address);
+    }
+  };
 
   return (
     <Container>
-      <CardNav />
       <AppBody>
-        {/* ... existing JSX ... */}
         <CardBody>
-          {/* ... existing JSX for SaleInputPanel ... */}
-          <Input
-            value={poolAddress}
-            onChange={handlePoolAddressChange}
-            placeholder="Enter Pool Address"
-          />
-{poolAddress && (
-  <iframe
-    title="DEXTools Trading Chart"
-    width="500"
-    height="400"
-    src={getChartUrl()}
-  />
-)}
-          {/* ... existing JSX for BottomGrouping ... */}
+          {/* ... */}
+
+
+      <Button onClick={toggleList}>Toggle Pool List</Button>
+      {showList && (
+    <div>
+      {Object.entries(poolPairs).map(([name, address]) => (
+        <div
+          key={address}
+          onClick={() => selectPool(address)}
+          onKeyDown={(event) => handleKeyDown(event, address)}
+          role="button"
+          tabIndex={0} // Make the div focusable
+          style={{ cursor: 'pointer' }} // Optional, for visual feedback
+        >
+          {name}
+        </div>
+      ))}
+    </div>
+  )}
+      <Input
+        value={poolAddress}
+        onChange={handlePoolAddressChange}
+        placeholder="Enter Pool Address"
+      />
+      {poolAddress && (
+        <iframe
+          title="DEXTools Trading Chart"
+          width="500"
+          height="400"
+          src={getChartUrl()}
+        />
+      )}
         </CardBody>
       </AppBody>
     </Container>
-  );
+  )
 };
 
-export default Charts;
+
+
+export default PoolChartComponent;
