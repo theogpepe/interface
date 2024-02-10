@@ -1,7 +1,7 @@
 
 
 import React, { useState, useCallback } from 'react';
-import { Input, Button, CardBody } from '@theogpepe/uikit'; // Ensure these components are correctly imported
+import { Input, Button } from '@theogpepe/uikit'; // Ensure these components are correctly imported
 import Container from 'components/Container';
 import AppBody from 'pages/AppBody';
 
@@ -42,7 +42,6 @@ const PoolChartComponent = () => {
   return (
     <Container>
       <AppBody>
-        <CardBody>
           {/* ... */}
 
 
@@ -76,7 +75,6 @@ const PoolChartComponent = () => {
           src={getChartUrl()}
         />
       )}
-        </CardBody>
       </AppBody>
     </Container>
   )
