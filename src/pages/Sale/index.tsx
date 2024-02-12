@@ -3,7 +3,10 @@
 import React, { useState, useCallback } from 'react';
 import { Input, Button } from '@theogpepe/uikit'; // Ensure these components are correctly imported
 import Container from 'components/Container';
-import AppBody from 'pages/AppBody';
+import styled from 'styled-components';
+import DoubleCurrencyLogo from 'components/DoubleLogo';
+import { ETHER } from '@theogpepe/v2-sdk';
+import { PEPE } from 'constants/index';
 
 
 const poolPairs = {
@@ -11,6 +14,8 @@ const poolPairs = {
   "ETH/WOJAK": "0x115f10B50314677f8e50189Ff588533873e867E7", // More pairs
   // Add more pairs as needed
 };
+
+
 
 const PoolChartComponent = () => {
   const [poolAddress, setPoolAddress] = useState('');
@@ -39,28 +44,46 @@ const PoolChartComponent = () => {
     }
   };
 
+  const PoolList = styled.div`
+  /* Styles for the pool list container */
+  margin-top: 10px;
+`;
+
+const PoolItem = styled.div`
+  /* Styles for each pool item */
+  padding: 8px 10px;
+  margin-bottom: 5px;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  cursor: pointer;
+  &:hover {
+    background-color: #e0e0e0;
+  }
+`;
+
+
   return (
     <Container>
-      <AppBody>
           {/* ... */}
 
 
       <Button onClick={toggleList}>Toggle Pool List</Button>
       {showList && (
-    <div>
-      {Object.entries(poolPairs).map(([name, address]) => (
-        <div
-          key={address}
-          onClick={() => selectPool(address)}
-          onKeyDown={(event) => handleKeyDown(event, address)}
-          role="button"
-          tabIndex={0} // Make the div focusable
-          style={{ cursor: 'pointer' }} // Optional, for visual feedback
-        >
-          {name}
-        </div>
-      ))}
-    </div>
+        <PoolList>
+        {Object.entries(poolPairs).map(([name, address]) => (
+          <PoolItem
+            key={address}
+            onClick={() => selectPool(address)}
+            onKeyDown={(event) => handleKeyDown(event, address)}
+            role="button"
+            tabIndex={0}
+          >
+            {name}
+            <DoubleCurrencyLogo currency0={ETHER} currency1={PEPE} />
+          </PoolItem>
+        ))}
+      </PoolList>
   )}
       <Input
         value={poolAddress}
@@ -75,7 +98,6 @@ const PoolChartComponent = () => {
           src={getChartUrl()}
         />
       )}
-      </AppBody>
     </Container>
   )
 };
