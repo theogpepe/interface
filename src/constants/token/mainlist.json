@@ -59,14 +59,6 @@
       "logoURI": "https://swap.ogpepe.io/images/coins/btc.png"
     },
     {
-      "name": "pepeCoin",
-      "symbol": "pepecoin",
-      "address": "0xa9e8acf069c58aec8825542845fd754e41a9489a",
-      "chainId": 1,
-      "decimals": 18,
-      "logoURI": "https://etherscan.io/token/images/pepecoin2_32.png"
-    },
-    {
       "name": "Pepe",
       "symbol": "PEPE",
       "address": "0x6982508145454ce325ddbe47a25d4ec3d2311933",
@@ -75,20 +67,12 @@
       "logoURI": "https://etherscan.io/token/images/pepe_32.png?=v1"
     },
     {
-      "name": "Pepe Community",
-      "symbol": "PEPE",
-      "address": "0xbe042e9d09cb588331ff911c2b46fd833a3e5bd6",
+      "name": "Chad",
+      "symbol": "CHAD",
+      "address": "0x68d009F251FF3a271477F77aCb704C3b0F32a0c0",
       "chainId": 1,
       "decimals": 18,
-      "logoURI": "https://etherscan.io/token/images/pepecommunityvip_32.png"
-    },
-    {
-      "name": "Pepe 2.0",
-      "symbol": "PEPE2.0",
-      "address": "0xfb66321d7c674995dfcc2cb67a30bc978dc862ad",
-      "chainId": 1,
-      "decimals": 18,
-      "logoURI": "https://etherscan.io/token/images/pepe20_32.png"
+      "logoURI": "https://assets.coingecko.com/coins/images/35457/standard/LOGO_RED.png"
     }
 
   ]
