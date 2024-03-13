@@ -65,6 +65,14 @@
       "chainId": 1,
       "decimals": 18,
       "logoURI": "https://etherscan.io/token/images/pepe_32.png?=v1"
+    },
+    {
+      "name": "Chad",
+      "symbol": "CHAD",
+      "address": "0x68d009F251FF3a271477F77aCb704C3b0F32a0c0",
+      "chainId": 1,
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/35457/standard/LOGO_RED.png"
     }
   ]
 }
