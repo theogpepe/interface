@@ -73,6 +73,30 @@
       "chainId": 1,
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/35457/standard/LOGO_RED.png"
+    },
+    {
+      "name": "Chad",
+      "symbol": "CHAD",
+      "address": "0x5c888fa2e6f9f0880321683d1efa12e936fd5051",
+      "chainId": 1,
+      "decimals": 18,
+      "logoURI": "https://ogpepe.io/images/token/chad.png"
+    },
+    {
+      "name": "Chad",
+      "symbol": "CHAD",
+      "address": "0xb4577d084f289e696ddfac178c11663e573900f1",
+      "chainId": 1,
+      "decimals": 18,
+      "logoURI": "https://ogpepe.io/images/token/chadtoken.png"
+    },
+    {
+      "name": "Chad Coin",
+      "symbol": "CHAD",
+      "address": "0x6b89b97169a797d94f057f4a0b01e2ca303155e4",
+      "chainId": 1,
+      "decimals": 18,
+      "logoURI": "https://ogpepe.io/images/token/chadcoin.png"
     }
   ]
 }
