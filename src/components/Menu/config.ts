@@ -45,7 +45,7 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Docs',
-        href: 'https://github.com/theogpepe',
+        href: 'https://docs.ogpepe.io',
       },
     ],
   },
