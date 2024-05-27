@@ -20,7 +20,7 @@
     },
     {
       "name": "Pepe",
-      "symbol": "PEPE",
+      "symbol": "PEPE ( The 2020 OG )",
       "address": "0x4dFae3690b93c47470b03036A17B23C1Be05127C",
       "chainId": 1,
       "decimals": 18,
@@ -60,7 +60,7 @@
     },
     {
       "name": "Pepe",
-      "symbol": "PEPE",
+      "symbol": "PEPE ( The Binance One )",
       "address": "0x6982508145454ce325ddbe47a25d4ec3d2311933",
       "chainId": 1,
       "decimals": 18,
@@ -68,7 +68,7 @@
     },
     {
       "name": "Chad",
-      "symbol": "CHAD",
+      "symbol": "CHAD ( Official )",
       "address": "0x68d009F251FF3a271477F77aCb704C3b0F32a0c0",
       "chainId": 1,
       "decimals": 18,
@@ -76,27 +76,27 @@
     },
     {
       "name": "Chad",
-      "symbol": "CHAD",
+      "symbol": "CHAD ( The 2020 OG )",
       "address": "0x5c888fa2e6f9f0880321683d1efa12e936fd5051",
       "chainId": 1,
       "decimals": 18,
-      "logoURI": "https://ogpepe.io/images/token/chad.png"
+      "logoURI": "https://chads.meme/chad.png"
     },
     {
       "name": "Chad",
-      "symbol": "CHAD",
+      "symbol": "CHAD ( Historic )",
       "address": "0xb4577d084f289e696ddfac178c11663e573900f1",
       "chainId": 1,
       "decimals": 18,
       "logoURI": "https://ogpepe.io/images/token/chadtoken.png"
     },
     {
-      "name": "Chad Coin",
-      "symbol": "CHAD",
-      "address": "0x6b89b97169a797d94f057f4a0b01e2ca303155e4",
+      "name": "Chad",
+      "symbol": "CHAD ( Community )",
+      "address": "0xff554b495ba09cb31c1833ed133e732aabaf7aca",
       "chainId": 1,
       "decimals": 18,
-      "logoURI": "https://ogpepe.io/images/token/chadcoin.png"
+      "logoURI": "https://www.dextools.io/resources/tokens/logos/ether/0x7d7ef607a2b7ab675194d85eb03b276a93f6b71d.png?1693231726110"
     }
   ]
 }
