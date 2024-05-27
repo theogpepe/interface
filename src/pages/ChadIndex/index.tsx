@@ -12,7 +12,7 @@ const StyledChartsContainer = styled.div`
 const ChartFrame = styled.iframe`
   flex: 1 1 300px; // Flex-basis of 300px allows charts to wrap on smaller screens
   border: none;
-  min-width: 300px;
+  min-width: 500px;
   height: 400px;
 `;
 
@@ -33,11 +33,11 @@ const ChadIndex = () => {
     <Container>
       <StyledChartsContainer>
         {Object.entries(poolAddresses).map(([label, address]) => (
-          <ChartFrame
-            key={address}  // Use the address as the key instead of index
-            title={`DEXTools Trading Chart - ${label}`}
-            src={getChartUrl(address)}
-          />
+        <iframe
+        title={`DEXTools Trading Chart - ${label}`}
+        width="500"
+        height="400"
+        src={getChartUrl(address)}      />
         ))}
       </StyledChartsContainer>
     </Container>
