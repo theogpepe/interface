@@ -9,13 +9,6 @@ const StyledChartsContainer = styled.div`
   gap: 20px;
 `;
 
-const ChartFrame = styled.iframe`
-  flex: 1 1 300px; // Flex-basis of 300px allows charts to wrap on smaller screens
-  border: none;
-  min-width: 500px;
-  height: 400px;
-`;
-
 const poolAddresses = {
     "Chart 1": "0xf532da4460c965379593d38f89afae437fb54700",
     "Chart 2": "0xcd81efdcd5ee3befbadcf46cef1b4c0bf7b40df0",
