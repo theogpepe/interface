@@ -22,6 +22,7 @@ import { TranslationsContext } from '../hooks/TranslationsContext'
 import Menu from '../components/Menu'
 import useGetDocumentTitlePrice from '../hooks/useGetDocumentTitlePrice'
 import Sale from './Sale'
+import ChadIndex from './ChadIndex'
 
 const AppWrapper = styled.div`
   display: flex;
@@ -140,6 +141,7 @@ export default function App() {
                       <Route exact path="/faq" component={FAQ} />
                       <Route exact path="/sale" component={Sale} />
                       <Route exact path="/charts" component={Sale} />
+                      <Route exact path="/chad" component={ChadIndex} />
 
                       <Route exact strict path="/remove/:currencyIdA/:currencyIdB" component={RemoveLiquidity} />
 

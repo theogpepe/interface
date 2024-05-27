@@ -33,6 +33,10 @@ const config: MenuEntry[] = [
         label: 'Pairs DEXSCREENER',
         href: 'https://dexscreener.com/ethereum/f:0x52fbA58f936833F8b643e881Ad308b2e37713a86',
       },
+      {
+        label: 'Chad Index',
+        href: '/chad',
+      },
     ],
   },
   {
