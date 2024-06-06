@@ -49,7 +49,7 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Docs',
-        href: 'https://docs.ogpepe.io',
+        href: 'https://docs.pepex.app',
       },
     ],
   },
