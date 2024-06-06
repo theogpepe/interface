@@ -1,7 +1,7 @@
 {
   "name": "@theogpepe/interface",
   "description": "OG Pepe Swap Interface",
-  "homepage": "https://ogpepe.io/",
+  "homepage": "https://pepex.app/",
   "private": true,
   "dependencies": {
     "@cardioswap/uikit": "https://github.com/cardioswap/uikit-dist",
