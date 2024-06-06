@@ -13,6 +13,7 @@ import PoolFinder from './PoolFinder'
 import RemoveLiquidity from './RemoveLiquidity'
 import Swap from './Swap'
 import FAQ from './FAQ'
+import Create from './Create'
 import { RedirectPathToSwapOnly } from './Swap/redirects'
 import { EN, allLanguages } from '../constants/localisation/languageCodes'
 import { LanguageContext } from '../hooks/LanguageContext'
@@ -142,6 +143,7 @@ export default function App() {
                       <Route exact path="/sale" component={Sale} />
                       <Route exact path="/charts" component={Sale} />
                       <Route exact path="/chad" component={ChadIndex} />
+                      <Route exact path="/create" component={Create} />
 
                       <Route exact strict path="/remove/:currencyIdA/:currencyIdB" component={RemoveLiquidity} />
 
