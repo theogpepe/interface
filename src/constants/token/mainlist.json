@@ -12,7 +12,7 @@
   "tokens": [
     {
       "name": "Wojak.farm",
-      "symbol": "WOJAK",
+      "symbol": "WOJAK 2020",
       "address": "0x4fd2ec9bdd398f8e522d76ea3704f8dbdc1f23f4",
       "chainId": 1,
       "decimals": 18,
@@ -20,7 +20,7 @@
     },
     {
       "name": "Pepe",
-      "symbol": "PEPE ( The 2020 OG )",
+      "symbol": "PEPE 2020",
       "address": "0x4dFae3690b93c47470b03036A17B23C1Be05127C",
       "chainId": 1,
       "decimals": 18,
@@ -60,7 +60,7 @@
     },
     {
       "name": "Pepe",
-      "symbol": "PEPE ( The Binance One )",
+      "symbol": "PEPE 2023",
       "address": "0x6982508145454ce325ddbe47a25d4ec3d2311933",
       "chainId": 1,
       "decimals": 18,
@@ -68,7 +68,7 @@
     },
     {
       "name": "Chad",
-      "symbol": "CHAD ( Official )",
+      "symbol": "CHAD 2024",
       "address": "0x68d009F251FF3a271477F77aCb704C3b0F32a0c0",
       "chainId": 1,
       "decimals": 18,
@@ -76,7 +76,7 @@
     },
     {
       "name": "Chad",
-      "symbol": "CHAD ( The 2020 OG )",
+      "symbol": "CHAD 2020",
       "address": "0x5c888fa2e6f9f0880321683d1efa12e936fd5051",
       "chainId": 1,
       "decimals": 18,
@@ -84,7 +84,7 @@
     },
     {
       "name": "Chad",
-      "symbol": "CHAD ( Historic )",
+      "symbol": "CHAD 2023",
       "address": "0xb4577d084f289e696ddfac178c11663e573900f1",
       "chainId": 1,
       "decimals": 18,
@@ -92,11 +92,19 @@
     },
     {
       "name": "Chad",
-      "symbol": "CHAD ( Community )",
+      "symbol": "CHAD Community",
       "address": "0x7d7ef607a2b7ab675194d85eb03b276a93f6b71d",
       "chainId": 1,
       "decimals": 18,
       "logoURI": "https://www.dextools.io/resources/tokens/logos/ether/0x7d7ef607a2b7ab675194d85eb03b276a93f6b71d.png?1693231726110"
+    },
+    {
+      "name": "Wojak Coin",
+      "symbol": "WOJAK 2023",
+      "address": "0x5026f006b85729a8b14553fae6af249ad16c9aab",
+      "chainId": 1,
+      "decimals": 18,
+      "logoURI": "https://assets.coingecko.com/coins/images/29856/standard/wojak.png?1696528782"
     }
   ]
 }
