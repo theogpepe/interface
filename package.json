@@ -4,7 +4,6 @@
   "homepage": "https://pepex.app/",
   "private": true,
   "dependencies": {
-    "@cardioswap/uikit": "https://github.com/cardioswap/uikit-dist",
     "@crowdin/crowdin-api-client": "^1.8.16",
     "@ethersproject/experimental": "^5.0.1",
     "@popperjs/core": "^2.4.4",

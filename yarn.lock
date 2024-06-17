@@ -1132,18 +1132,6 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@cardioswap/uikit@https://github.com/cardioswap/uikit-dist":
-  version "0.31.0"
-  resolved "https://github.com/cardioswap/uikit-dist#466687f7f6ebcfb78b8cb2ccd3d94342c556ad75"
-  dependencies:
-    "@popperjs/core" "^2.9.2"
-    "@types/lodash" "^4.14.168"
-    "@types/styled-system" "^5.1.10"
-    lodash "^4.17.20"
-    react-popper "^2.2.5"
-    react-transition-group "^4.4.1"
-    styled-system "^5.1.5"
-
 "@cnakazawa/watch@^1.0.3":
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/@cnakazawa/watch/-/watch-1.0.4.tgz#f864ae85004d0fcab6f50be9141c4da368d1656a"
@@ -2474,8 +2462,8 @@
     pretty-format "^26.6.2"
 
 "@theogpepe/uikit@https://github.com/theogpepe/uidist":
-  version "0.28.0"
-  resolved "https://github.com/theogpepe/uidist#e7cd7b84a3268805a843ca891d67ffc8cd6920ea"
+  version "0.30.0"
+  resolved "https://github.com/theogpepe/uidist#f0875dc4d8d453ff9d3593377d2fb5f0cd5d7c05"
   dependencies:
     "@popperjs/core" "^2.9.2"
     "@types/lodash" "^4.14.168"
