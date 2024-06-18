@@ -105,6 +105,14 @@
       "chainId": 1,
       "decimals": 18,
       "logoURI": "https://assets.coingecko.com/coins/images/29856/standard/wojak.png?1696528782"
+    },
+    {
+      "name": "Wojak",
+      "symbol": "WOJAK 2024",
+      "address": "0x463f9aea149845f48a4f004eab8e64bfd7ab6da3",
+      "chainId": 1,
+      "decimals": 18,
+      "logoURI": "https://www.dextools.io/resources/tokens/logos/ether/0x463f9aea149845f48a4f004eab8e64bfd7ab6da3.png?1715878610016"
     }
   ]
 }
