@@ -2463,7 +2463,7 @@
 
 "@theogpepe/uikit@https://github.com/theogpepe/uidist":
   version "0.30.0"
-  resolved "https://github.com/theogpepe/uidist#f0875dc4d8d453ff9d3593377d2fb5f0cd5d7c05"
+  resolved "https://github.com/theogpepe/uidist#7d51b3d83f67d128c08ba6fffa1bf8d6b0fe307d"
   dependencies:
     "@popperjs/core" "^2.9.2"
     "@types/lodash" "^4.14.168"
