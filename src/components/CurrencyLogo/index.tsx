@@ -7,7 +7,7 @@ import Logo from '../Logo'
 import CoinLogo from '../pancake/CoinLogo'
 
 const getTokenLogoURL = (address: string) =>
-  `https://pepex.app/images/coins/${address}.png`
+  `https://pepex.io/images/coins/${address}.png`
 
 const StyledETHLogo = styled.img<{ size: string }>`
   width: ${({ size }) => size};

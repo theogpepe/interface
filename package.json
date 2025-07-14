@@ -1,7 +1,7 @@
 {
   "name": "@theogpepe/interface",
-  "description": "OG Pepe Swap Interface",
-  "homepage": "https://pepex.app/",
+  "description": "PepeX Swap Interface",
+  "homepage": "https://pepex.io/",
   "private": true,
   "dependencies": {
     "@crowdin/crowdin-api-client": "^1.8.16",

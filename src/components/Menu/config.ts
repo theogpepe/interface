@@ -53,7 +53,7 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Docs',
-        href: 'https://docs.pepex.app',
+        href: 'https://docs.pepex.io',
       },
     ],
   },
